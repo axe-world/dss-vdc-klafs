@@ -1,0 +1,119 @@
+username = "";
+password = "";
+pin = "";
+aspxauth = "";
+reload_values = 60;
+zone_id = 65534;
+debug = 7;
+sauna : 
+{
+  id = "";
+  name = "Klafs S1";
+  scenes : 
+  {
+    s0 : 
+    {
+      dsId = 0;
+      isPoweredOn = 0;
+    };
+    s1 : 
+    {
+      dsId = 13;
+      isPoweredOn = 0;
+    };
+    s2 : 
+    {
+      dsId = 14;
+      isPoweredOn = 1;
+      saunaSelected = 0;
+      sanariumSelected = 0;
+      irSelected = 0;
+      selectedSaunaTemperature = 0;
+      selectedSanariumTemperature = 0;
+      selectedIrTemperature = 0;
+      selectedHumLevel = 0;
+      selectedIrLevel = 0;
+      showBathingHour = 0;
+      bathingHours = 0;
+      bathingMinutes = 0;
+      selectedHour = 0;
+      selectedMinute = 0;
+    };
+    s3 : 
+    {
+      dsId = 5;
+      isPoweredOn = 1;
+      saunaSelected = 1;
+      sanariumSelected = 0;
+      irSelected = 0;
+      selectedSaunaTemperature = 85;
+      selectedSanariumTemperature = 50;
+      selectedIrTemperature = 0;
+      selectedHumLevel = 0;
+      selectedIrLevel = 0;
+      showBathingHour = 0;
+      bathingHours = 0;
+      bathingMinutes = 0;
+      selectedHour = 0;
+      selectedMinute = 0;
+    };
+    s4 : 
+    {
+      dsId = 17;
+      isPoweredOn = 1;
+      saunaSelected = 1;
+      sanariumSelected = 0;
+      irSelected = 0;
+      selectedSaunaTemperature = 70;
+      selectedSanariumTemperature = 50;
+      selectedIrTemperature = 0;
+      selectedHumLevel = 0;
+      selectedIrLevel = 0;
+      showBathingHour = 0;
+      bathingHours = 0;
+      bathingMinutes = 0;
+      selectedHour = 0;
+      selectedMinute = 0;
+    };
+  };
+};
+binary_values : 
+{
+  b0 : 
+  {
+    value_name = "isPoweredOn";
+    sensor_function = 19;
+  };
+  b1 : 
+  {
+    value_name = "isReadyForUse";
+    sensor_function = 11;
+  };
+};
+sensor_values : 
+{
+  s0 : 
+  {
+    value_name = "currentTemperature";
+    sensor_type = 1;
+    sensor_usage = 1;
+  };
+  s1 : 
+  {
+    value_name = "currentHumidity";
+    sensor_type = 2;
+    sensor_usage = 1;
+  };
+  s2 : 
+  {
+    value_name = "selectedSaunaTemperature";
+    sensor_type = 1;
+    sensor_usage = 1;
+  };
+  s3 : 
+  {
+    value_name = "selectedSanariumTemperature";
+    sensor_type = 1;
+    sensor_usage = 1;
+  };
+};
